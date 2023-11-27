@@ -17,3 +17,9 @@
       loop:
         - banana
         - kiwi
+    - name: print Fruits name and quantity
+      ansible.builtin.debug:
+        msg: Fruit Name - "{{ item }}"
+      loop:
+        - { name: "orange", quantity: 100}
+        - { name: "apple", quantity: 200}

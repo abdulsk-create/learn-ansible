@@ -4,7 +4,7 @@
   vars:
     fruit_name: apple # string
     quantity: 100 # number
-    for_sale: true # boolean
+    for_sale: 'true' # boolean
   tasks:
     - name: print
       ansible.builtin.debug:

@@ -13,7 +13,7 @@
 
     - name: print Fruits local values
       ansible.builtin.debug:
-        msg: Fruit Name - "{{ item.name }}", Quantity - "{{ item.quantity }}"
+        msg: Fruit Name - {{ item.name }}, Quantity - {{ item.quantity }}
       loop:
         - banana
         - kiwi
